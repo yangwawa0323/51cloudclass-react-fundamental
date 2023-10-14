@@ -1,5 +1,18 @@
-const Hello = () => <div>Hello react!</div>;
+// JSX ES6 arrow function
 
-var container = document.querySelector('#root');
-const root = ReactDOM.createRoot(container);
-root.render(<Hello />);
+const Hello = () => {
+	return (
+		<div>
+			<h1 style={{ color: 'red' }}> Hello world!</h1>
+		</div>
+	);
+};
+
+// step 1 : inject where
+const rootContainter = document.querySelector('#root');
+
+// step 2 : Virtual DOM
+const root = ReactDOM.createRoot(rootContainter);
+
+// step 3: Which React Element
+root.render(/** KEY */ <Hello />);
