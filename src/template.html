@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>51cloudclass react 18 cdn page template</title>
+</head>
+
+<body>
+
+    <h2>一分钟加入React</h2>
+    <p>这个页面用于显示如何不编译的情况下使用React18</p>
+
+    <hr />
+    <!-- We will put our React component inside this div. -->
+    <div id="root"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"
+        crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+        crossorigin></script>
+
+
+    <!-- Note: Using babel transform JSX to javascript -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Load our React component. IMPORTANT： type must be `text/babel` -->
+    <script src="bootstrap.js" type="text/babel"></script>
+
+</body>
+
+</html>
